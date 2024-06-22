@@ -3,7 +3,7 @@ import destination2 from "./destination2.webp";
 import destination3 from "./destination3.webp";
 import destination4 from "./destination4.webp";
 import logo from "./logo.png";
-import hero from "./hero.jpeg";
+import hero from "./hero.webp";
 import location from "./location.svg";
 import person from "./person.svg";
 import calender from "./calender.svg";
