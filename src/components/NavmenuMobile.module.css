@@ -1,0 +1,77 @@
+.section {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  color: #fff;
+  align-items: center;
+}
+
+.searchGroups {
+  padding: 48px 35px;
+  background: #2659c3;
+  border: 2px solid #dee0e5;
+  border-radius: 20px;
+}
+
+.searchGroups > * + * {
+  margin-top: 2rem;
+}
+
+.group {
+  display: flex;
+
+  padding: 16px 11.604px;
+  gap: 9.86px;
+
+  align-items: center;
+
+  width: 170px;
+  height: 30.32px;
+
+  border: 0.5802px solid #ffffff;
+  border-radius: 8.70299px;
+}
+
+.navMenu {
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navMenu > * + * {
+  padding-top: 0.8rem;
+}
+
+.link {
+  color: #fff;
+  position: relative;
+  /* padding-bottom: 0.5rem; */
+}
+
+.link:hover::before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #fff;
+}
+
+.navItems {
+  position: relative;
+  cursor: pointer;
+}
+.navItems :global(.active)::before {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background: #fff;
+}
+@media screen and (min-width: 56.25em) {
+  .section {
+    display: none;
+  }
+}

@@ -1,0 +1,54 @@
+.footer {
+  background: linear-gradient(180deg, #516384 0%, #05122c 100%);
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.logoText {
+  border: 1px solid #fff;
+  margin-top: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.6rem;
+}
+
+.textContainer > * + * {
+  margin-top: 0.7rem;
+}
+
+@media screen and (min-width: 56em) {
+  .footerContainer {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #fff;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .logoText {
+    font-size: 0.8rem;
+  }
+}

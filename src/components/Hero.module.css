@@ -1,0 +1,73 @@
+/* .heroContianer {
+  position: relative;
+}
+
+.hero {
+  border-radius: 15px;
+}
+
+.content {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 30px;
+}
+.button {
+  width: 111.66px;
+  height: 32.07px;
+  background: #c27bcb;
+  border: 1.18787px solid #ffffff;
+  border-radius: 8.90903px;
+} */
+
+/* Hero.module.css */
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.hero {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  font-size: 1.2rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center-align text within the content div */
+  color: white; /* Adjust text color if necessary */
+}
+
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #c27bcb;
+  border: 1.18787px solid #ffffff;
+  border-radius: 8.90903px;
+}
