@@ -8,10 +8,12 @@
   align-items: center;
   text-align: center;
 
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #fff;
 }
-
+.footerContainer>*+*{
+  margin-top: 1.8rem;
+}
 .logo {
   margin: 0 auto;
   width: 100px;

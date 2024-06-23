@@ -12,6 +12,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   overflow-x: scroll;
   gap: 1rem;
+
 }
 
 .title {
@@ -20,14 +21,19 @@
 }
 
 .card {
+  color: rgba(255, 255, 255,0.5);
   width: 343.18px;
-  padding: 1rem;
+  position: relative;
   background-color: #1c1853;
-   border-radius: 15px;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
 .image {
+  width: 343.18px;
   border-radius: 10px;
+  height: 221.41px;
+  object-fit: cover;
 }
 
 .cardContainer::-webkit-scrollbar {
@@ -55,6 +61,6 @@
   left: 10%;
   font-weight: bold;
   /* padding: 1rem; */
-  font-size: 1.1rem;
+  font-size: 1rem;
   z-index: 2;
 }

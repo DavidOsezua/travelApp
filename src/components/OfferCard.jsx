@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./OfferCard.module.css";
-import { destinationCards } from "../data/data";
-import { destination1 } from "../assets";
+import { offerCards } from "../data/data";
 
 const OfferCard = () => {
   return (
@@ -9,13 +8,21 @@ const OfferCard = () => {
       <h3 className={styles.title}>Offers</h3>
 
       <div className={styles.cardContainer}>
-        {destinationCards.map((card, i) => (
+        {offerCards.map((card, i) => (
           <div key={i} className={styles.card}>
             <div>
-              <img src={destination1} className={styles.image} />
+              <img src={card.image} className={styles.image} />
             </div>
 
-            <p>Los Angenles</p>
+            <div className={`${styles.content}`}>
+              <p>{card.text1}</p>
+              <h1 className="font-bold text-[#fff] text-[1.3rem]">
+                {card.title}
+              </h1>
+              <p>{card.text2}</p>
+
+              <button className={styles.btn}>Book Now</button>
+            </div>
           </div>
         ))}
       </div>

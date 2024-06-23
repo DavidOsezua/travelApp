@@ -1,0 +1,23 @@
+.section {
+  display: none;
+}
+
+@media screen and (min-width: 56.25em) {
+  .section {
+    display: block;
+    color: #fff;
+    /* font-size: 0.8rem; */
+
+    /* Auto layout */
+
+    padding: 48px 46px;
+    gap: 18px 32px;
+    background: #1c1853;
+    border: 2px solid #dee0e5;
+    border-radius: 20px;
+  }
+
+  .section > * + * {
+    margin-top: 3rem;
+  }
+}

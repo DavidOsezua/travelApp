@@ -1,21 +1,21 @@
 import React from "react";
 import styles from "./PackageCard.module.css";
-import { destinationCards } from "../data/data";
+import { destinationCards, packageCards } from "../data/data";
 import { car, hotel, plane, star, walking } from "../assets";
 
-const PackageCard = () => {
+const PackageCard = ({ title }) => {
   return (
     <section className={styles.section}>
-      <h3 className={styles.title}>Popular Beach Destinations</h3>
+      <h3 className={styles.title}>{title}</h3>
       <div className={styles.cardContainer}>
-        {destinationCards.map((card, i) => (
+        {packageCards.map((card, i) => (
           <div className={styles.card} key={i}>
             <div>
               {" "}
               <img src={card.image} className={styles.image} />
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 text-[0.9rem]">
               <div className="flex justify-between items-center">
                 <div>
                   <h2>Swiss Apls</h2>
