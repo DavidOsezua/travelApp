@@ -9,7 +9,8 @@ const App = () => {
         {/* <ScrollToTop */}
         <Header />
         <Routes>
-          <Route path="/" element={<Glamping />} />
+          <Route path="/" element={<Flight />} />
+          <Route path="/glamping" element={<Glamping />} />
           <Route path="/flight" element={<Flight />} />
           <Route path="/hotels" element={<Hotels />} />
           <Route path="/packages" element={<Packages />} />

@@ -17,7 +17,7 @@ const NavmenuMobile = () => {
 
       <ul className={styles.navMenu}>
         <li className={styles.navItems}>
-          <NavLink to="/" className={`${styles.link}`}>
+          <NavLink to="/glamping" className={`${styles.link}`}>
             Glamping
           </NavLink>
         </li>

@@ -9,7 +9,7 @@ const Header = () => {
       <nav className={`${styles.navContainer}`}>
         <ul className={styles.navMenu}>
           <li className={styles.navItems}>
-            <NavLink to="/" className={`${styles.link}`}>
+            <NavLink to="/glamping" className={`${styles.link}`}>
               Glamping
             </NavLink>
           </li>
@@ -40,7 +40,10 @@ const Header = () => {
           </li>
         </ul>
 
-        <img src={logo} className={styles.logo} />
+        <NavLink to="/">
+          {" "}
+          <img src={logo} className={styles.logo} />
+        </NavLink>
 
         <div className={styles.searchGroup}>
           <div>Get App</div>
